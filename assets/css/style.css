@@ -699,11 +699,12 @@ header .navbar.clicked {
   width: 6.8125rem;
   margin: auto;
   height: 3.19rem;
-  border-radius: 5px;
+  border-radius: 8px;
   text-transform: uppercase;
   text-align: center;
+  transition: all 300ms ease-in-out;
 }
-.menu-section .menu-tabs-grid .active {
+.menu-section .menu-tabs-grid .menu-tab:focus {
   background-color: #5c2800;
   color: #fff;
 }
