@@ -1,9 +1,11 @@
 // close loader when page has loaded
 const loadingScreen = document.querySelector('.loading-screen');
+const body = document.querySelector('body');
 
 window.addEventListener('load',function() {
     loadingScreen.style.transform = `translateY(-5000px)`;
     loadingScreen.style.opacity = 0;
+    body.style.minHeight = `100vh`;
 });
 
 // hamburger menu button 
