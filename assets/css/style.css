@@ -842,4 +842,107 @@ header .navbar.clicked {
   font-family: "Poppins", sans-serif;
 }
 
+.footer-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #111;
+  padding: 3.125rem 0 2.375rem 0;
+}
+.footer-section .brand-name {
+  font-size: 3.125rem;
+  color: #ffaa00;
+  font-family: "Rowdies", cursive;
+  text-align: center;
+}
+.footer-section .brand-address {
+  font-size: 2.1875rem;
+  color: #ffaa00;
+  font-family: "Rowdies", cursive;
+  text-align: center;
+}
+.footer-section .email-cta-message {
+  font-size: 0.875rem;
+  color: #ffe8b2;
+  width: 92%;
+  margin: auto;
+  margin-top: 2.375rem;
+}
+.footer-section .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 92%;
+  margin: 2.4375rem auto 2.75rem auto;
+}
+.footer-section .contact-form input {
+  width: 10.875rem;
+  border-radius: 8px;
+  border: none;
+  padding: 0.6875rem 0.5625rem;
+  margin-top: 0.6875rem;
+  font-family: "Poppins", sans-serif;
+}
+.footer-section .contact-form input:first-child {
+  margin-top: 0;
+}
+.footer-section .contact-form input::placeholder {
+  font-size: 0.75rem;
+  color: #444;
+}
+.footer-section .contact-form input[type=text],
+.footer-section .contact-form input[type=email] {
+  height: 1.75rem;
+}
+.footer-section .contact-form input[type=submit] {
+  height: 2.5rem;
+  background: #F43D5D;
+  font-family: "Rowdies", cursive;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.footer-section .map {
+  width: 90.2777777778%;
+  height: 13.755625rem;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+.footer-section .contact-details {
+  color: #ffe8b2;
+  margin: 2.75rem auto auto auto;
+  width: 90.2777777778%;
+}
+.footer-section .contact-details .contact-details-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.footer-section .contact-details a {
+  text-decoration: none;
+  color: #ffe8b2;
+}
+.footer-section .contact-details .contact-details-item {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+.footer-section .contact-details .contact-details-item .contact-icon {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.main-footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.625rem;
+  height: 3.3125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

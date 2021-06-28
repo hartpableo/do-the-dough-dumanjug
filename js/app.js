@@ -213,3 +213,7 @@ const bestsellers = [
 bestsellingTab.addEventListener('click',function() {
     displayMenuItems(bestsellers);
 });
+
+// auto update year in footer
+const year = document.querySelector('.year');
+year.innerHTML = new Date().getFullYear();
