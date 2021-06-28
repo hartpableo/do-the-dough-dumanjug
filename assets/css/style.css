@@ -744,7 +744,6 @@ header .navbar.clicked {
 .menu-section .menu-items-grid .menu-item .menu-details {
   font-family: "Rowdies", cursive;
   font-size: 0.75rem;
-  font-weight: bold;
 }
 @keyframes appear {
   0% {
