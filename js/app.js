@@ -1,10 +1,10 @@
 // close loader when page has loaded
-// const loadingScreen = document.querySelector('.loading-screen');
+const loadingScreen = document.querySelector('.loading-screen');
 
-// window.addEventListener('load',function() {
-//     loadingScreen.style.transform = `translateY(-10000px)`;
-//     loadingScreen.style.opacity = 0;
-// });
+window.addEventListener('load',function() {
+    loadingScreen.style.transform = `translateY(-5000px)`;
+    loadingScreen.style.opacity = 0;
+});
 
 // hamburger menu button 
 const toggleBtn = document.querySelector('.hamburger');

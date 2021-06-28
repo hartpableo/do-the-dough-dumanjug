@@ -13,6 +13,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  transition: all 1000ms ease-in-out;
 }
 
 p {
@@ -29,9 +30,10 @@ p {
   align-items: center;
   font-family: "Rowdies", cursive;
   position: absolute;
-  transition: all 4.5s ease-in-out;
+  z-index: 10;
+  transition: all 6s ease-in-out;
 }
-.loading-screen img {
+.loading-screen .loading-screen-img {
   width: 64.17%;
   height: auto;
 }
@@ -91,8 +93,7 @@ header .hamburger {
 header .navbar {
   width: 100%;
   transition: all 320ms ease-in-out;
-  animation: nav-hide 370ms ease-in-out forwards;
-  transform-origin: top;
+  transform: translateX(-100%);
   background-color: #ffe8b2;
   position: absolute;
   z-index: 1;
@@ -119,28 +120,8 @@ header .navbar ul li a {
   text-decoration: none;
   color: #5c2800;
 }
-@keyframes nav-hide {
-  0% {
-    transform: translateX(0);
-    display: block;
-  }
-  100% {
-    transform: translateX(-100%);
-    display: none;
-  }
-}
 header .navbar.clicked {
-  animation: nav-appear 370ms ease-in-out forwards;
-}
-@keyframes nav-appear {
-  0% {
-    transform: translateX(-100%);
-    display: none;
-  }
-  100% {
-    transform: translateX(0);
-    display: block;
-  }
+  transform: translateX(0);
 }
 
 .banner-carousel {
@@ -875,7 +856,7 @@ header .navbar.clicked {
   margin: 2.4375rem auto 2.75rem auto;
 }
 .footer-section .contact-form input {
-  width: 10.875rem;
+  width: 14rem;
   border-radius: 8px;
   border: none;
   padding: 0.6875rem 0.5625rem;
