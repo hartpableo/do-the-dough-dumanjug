@@ -18,9 +18,10 @@ toggleBtn.addEventListener('click',function() {
     overlay.classList.toggle('clicked');
 });
 
-// close navbar when a navlink is clicked
+// close navbar when a navlink or the logo is clicked
 const navlinks = document.querySelectorAll('.navlink');
 const mainHeaderHeight = document.querySelector('.main-header').getBoundingClientRect().bottom;
+const topLogo = document.querySelector('.top-left-logo');
 
 navlinks.forEach(function(link) {
     link.addEventListener('click',function(e) {
@@ -36,6 +37,11 @@ navlinks.forEach(function(link) {
             top: position - mainHeaderHeight
         });
     });
+});
+
+topLogo.addEventListener('click',function() {
+    navbar.classList.remove('clicked');
+    overlay.classList.remove('clicked');
 });
 
 // navigate through feedbacks by customers
