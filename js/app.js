@@ -81,7 +81,7 @@ const menu = [
         category: 'dish-treat',
         price: `BUCKET &#40;20pcs&#41;:<br> 
         <span class="brown">P220.00</span>
-        <br><br>
+        <br>
         CELEB TREAT &#40;starts at 50pcs&#41;:<br>
         <span class="brown">P560.00</span>`,
         img: 'imgs/dynamite.jpg',
@@ -93,7 +93,7 @@ const menu = [
         category: 'pastries',
         price: `BUCKET &#40;20pcs&#41;:<br> 
         <span class="brown">P250.00</span>
-        <br><br>
+        <br>
         CELEB TREAT &#40;starts at 50pcs&#41;:<br>
         <span class="brown">P630.00</span>`,
         img: 'imgs/pork-empanada.jpg',
@@ -105,7 +105,7 @@ const menu = [
         category: 'pastries',
         price: `BUCKET &#40;20pcs&#41;:<br> 
         <span class="brown">P220.00</span>
-        <br><br>
+        <br>
         CELEB TREAT &#40;starts at 50pcs&#41;:<br>
         <span class="brown">P560.00</span>`,
         img: 'imgs/chocopanada.jpg',
@@ -117,7 +117,7 @@ const menu = [
         category: 'pastries',
         price: `BUCKET &#40;20pcs&#41;:<br> 
         <span class="brown">P200.00</span>
-        <br><br>
+        <br>
         CELEB TREAT &#40;starts at 50pcs&#41;:<br>
         <span class="brown">P520.00</span>`,
         img: 'imgs/milkypanada.jpg',
@@ -129,7 +129,7 @@ const menu = [
         category: 'sweets',
         price: `BARKADA TREAT &#40;3&#8211;4 pax serving suggestion&#41;:<br> 
         <span class="brown">P65.00</span>
-        <br><br>
+        <br>
         FAMILY TREAT &#40;6 pax serving suggestion&#41;:<br>
         <span class="brown">P120.00</span>`,
         img: 'imgs/banana-cake.jpg',
@@ -141,10 +141,10 @@ const menu = [
         category: 'salads',
         price: `BARKADA TREAT &#40;3&#8211;4 pax serving suggestion&#41;:<br> 
         <span class="brown">P250.00</span>
-        <br><br>
+        <br>
         FAMILY TREAT &#40;5&#8211;8 pax serving suggestion&#41;:<br>
         <span class="brown">P350.00</span>`,
-        img: 'imgs/nachos.jpg',
+        img: 'imgs/nacho-background.jpg',
         class: `"menu-img-container bestseller"`,
     },
 ];
@@ -199,7 +199,7 @@ const bestsellers = [
         itemName: 'Pork Empanada Espesyal',
         price: `BUCKET &#40;20pcs&#41;:<br> 
         <span class="brown">P250.00</span>
-        <br><br>
+        <br>
         CELEB TREAT &#40;starts at 50pcs&#41;:<br>
         <span class="brown">P630.00</span>`,
         img: 'imgs/pork-empanada.jpg', 
@@ -210,10 +210,10 @@ const bestsellers = [
         itemName: 'Nachos Salad',
         price: `BARKADA TREAT &#40;3&#8211;4 pax serving suggestion&#41;:<br> 
         <span class="brown">P250.00</span>
-        <br><br>
+        <br>
         FAMILY TREAT &#40;5&#8211;8 pax serving suggestion&#41;:<br>
         <span class="brown">P350.00</span>`,
-        img: 'imgs/nachos.jpg',
+        img: 'imgs/nacho-background.jpg',
         class: `"menu-img-container bestseller"`,
     },
 ];

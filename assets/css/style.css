@@ -7,13 +7,17 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  background-color: #ffe8b2;
 }
 
 body {
   width: 100%;
+  max-width: 1250px;
   height: 100vh;
   font-family: "Poppins", sans-serif;
   transition: all 1000ms ease-in-out;
+  background-color: #fff;
+  margin: auto;
 }
 
 p {
@@ -48,6 +52,7 @@ p {
 
 header {
   width: 100%;
+  max-width: 1250px;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -95,6 +100,7 @@ header .navbar {
   width: 100%;
   transition: all 320ms ease-in-out;
   transform: translateX(-100%);
+  opacity: 0;
   background-color: #ffe8b2;
   position: absolute;
   z-index: 1;
@@ -123,6 +129,7 @@ header .navbar ul li a {
 }
 header .navbar.clicked {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .banner-carousel {
@@ -138,14 +145,14 @@ header .navbar.clicked {
   left: 0;
 }
 .banner-carousel .slide1 {
-  background-image: url(../../imgs/banners/banner-1.jpg);
+  background-image: url(../../imgs/banners/banner-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   animation: fade1 30000ms infinite;
 }
 .banner-carousel .slide2 {
-  background-image: url(../../imgs/banners/banner-2.jpg);
+  background-image: url(../../imgs/banners/banner-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -437,7 +444,8 @@ header .navbar.clicked {
 
 .hero-section {
   width: 100%;
-  height: 38vh;
+  min-height: 18vh;
+  padding: 2.4375rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -531,6 +539,7 @@ header .navbar.clicked {
   width: 100%;
   min-height: 60vh;
   padding: 2.125rem 0.9375rem;
+  background-color: #fff;
 }
 .feedbacks-section .section-title {
   background-color: #5c2800;
@@ -620,7 +629,8 @@ header .navbar.clicked {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../../imgs/nacho-background.jpg);
+  background-image: url(../../imgs/nachos.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -644,6 +654,7 @@ header .navbar.clicked {
   width: 80%;
   margin: auto;
   color: #ffe8b2;
+  line-height: 150%;
 }
 
 .brown {
@@ -655,6 +666,7 @@ header .navbar.clicked {
   width: 100%;
   min-height: 100vh;
   padding: 2.8125rem 0;
+  background-color: #fff;
 }
 .menu-section .section-title {
   background-color: #ffe8b2;
@@ -662,10 +674,11 @@ header .navbar.clicked {
   color: #ffaa00;
 }
 .menu-section .menu-tabs-grid {
-  margin-top: 2.5625rem;
+  margin: 2.5625rem auto auto auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   width: 100%;
+  max-width: 800px;
   row-gap: 13px;
   column-gap: 10px;
 }
@@ -697,23 +710,25 @@ header .navbar.clicked {
   column-gap: 0.5625rem;
   row-gap: 0.3125rem;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  justify-content: center;
 }
 .menu-section .menu-items-grid .menu-item {
   width: 100%;
-  height: 22.875rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   transition: all 450ms ease-in-out;
   animation: appear 800ms ease forwards;
+  justify-items: center;
 }
 .menu-section .menu-items-grid .menu-item .menu-img-container {
   max-width: 100%;
-  max-height: 171px;
+  max-height: 47%;
   position: relative;
 }
 .menu-section .menu-items-grid .menu-item .menu-img-container .menu-img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .menu-section .menu-items-grid .menu-item .menu-name {
@@ -721,7 +736,7 @@ header .navbar.clicked {
   color: #ffaa00;
   font-weight: bold;
   font-family: "Rowdies", cursive;
-  height: 4.5rem;
+  height: auto;
 }
 .menu-section .menu-items-grid .menu-item .menu-details {
   font-family: "Rowdies", cursive;
@@ -931,6 +946,59 @@ header .navbar.clicked {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  .mission-section {
+    min-height: 25vh;
+  }
+  .mission-section p {
+    width: 50%;
+  }
+
+  .menu-section {
+    min-height: 65vh;
+  }
+  .menu-section .menu-items-grid {
+    grid-template-columns: repeat(auto-fit, minmax(245px, 300px));
+  }
+
+  .customer-message {
+    width: 85%;
+  }
+
+  .feedbacks-section {
+    min-height: auto;
+  }
+  .feedbacks-section .feedbacks-container .fa-chevron-circle-left, .feedbacks-section .feedbacks-container .fa-chevron-circle-right {
+    font-size: 2.9rem;
+  }
+
+  .footer-section {
+    min-height: auto;
+  }
+  .footer-section .contact-form input {
+    width: 50%;
+  }
+  .footer-section .map {
+    width: 60%;
+    height: 23rem;
+  }
+}
+@media (min-width: 900px) {
+  .mission-section {
+    min-height: 45vh;
+  }
+}
+@media (min-width: 1250px) {
+  header {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
