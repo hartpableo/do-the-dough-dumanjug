@@ -35,7 +35,7 @@ p {
   font-family: "Rowdies", cursive;
   position: absolute;
   z-index: 10;
-  transition: all 6s ease-in-out;
+  transition: all 4000ms ease-in-out;
 }
 .loading-screen .loading-screen-img {
   width: 64.17%;
@@ -895,11 +895,11 @@ header .navbar.clicked {
 .footer-section .contact-form input[type=email] {
   height: 1.75rem;
   transition: all 300ms ease-in-out;
+  padding: 1.5em;
 }
 .footer-section .contact-form input[type=text]:focus,
 .footer-section .contact-form input[type=email]:focus {
   border: 2px solid #5c2800;
-  padding: 1.5em;
   background-color: #fff1d0;
 }
 .footer-section .contact-form input[type=submit] {
@@ -908,6 +908,11 @@ header .navbar.clicked {
   font-family: "Rowdies", cursive;
   font-size: 0.875rem;
   color: #fff;
+  cursor: pointer;
+  transition: background 450ms ease-in-out;
+}
+.footer-section .contact-form input[type=submit]:hover {
+  background: #a81c1c;
 }
 .footer-section .map {
   width: 90.2777777778%;
@@ -995,12 +1000,80 @@ header .navbar.clicked {
   }
 }
 @media (min-width: 900px) {
+  .loading-screen .loading-screen-img {
+    width: 25rem;
+    height: auto;
+  }
+
+  header .navbar .navlink:hover {
+    color: #000;
+  }
+  header .hamburger {
+    cursor: pointer;
+  }
+
+  .banner-carousel {
+    height: 45vh;
+  }
+
+  .hero-section .menu-cta-container .navlink {
+    position: relative;
+    z-index: 1;
+  }
+  .hero-section .menu-cta-container .navlink::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #a81c1c;
+    transition: all 500ms ease-in-out;
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  .hero-section .menu-cta-container .navlink:hover::before {
+    transform: scaleX(1);
+  }
+
   .mission-section {
     min-height: 45vh;
   }
 
   .about-section .story-container .about-photo {
     height: 40vh;
+  }
+
+  .menu-section .menu-tab {
+    cursor: pointer;
+  }
+  .menu-section .menu-tab:hover {
+    background: #5c2800;
+    color: white;
+  }
+
+  .cta-section button {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .cta-section button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #a81c1c;
+    transition: transform 500ms ease-in-out;
+    transform-origin: left;
+    transform: scaleX(0);
+    border-radius: inherit;
+  }
+  .cta-section button:hover::before {
+    transform: scaleX(1);
   }
 }
 @media (min-width: 1250px) {

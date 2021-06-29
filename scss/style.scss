@@ -43,7 +43,7 @@ p {
     font-family: $rowdies;
     position: absolute;
     z-index: 10;
-    transition: all 6s ease-in-out;
+    transition: all 4000ms ease-in-out;
     .loading-screen-img {
         width: 64.17%;
         height: auto;
@@ -904,9 +904,9 @@ header {
         input[type=email] {
             height: 1.75rem;
             transition: all 300ms ease-in-out;
+            padding: 1.5em;
             &:focus, {
                 border: 2px solid $secondaryColor;
-                padding: 1.5em;
                 background-color: #fff1d0;
             }
         }
@@ -916,6 +916,11 @@ header {
             font-family: $rowdies;
             font-size: 0.875rem;
             color: #fff;
+            cursor: pointer;
+            transition: background 450ms ease-in-out;
+            &:hover {
+                background: rgb(168, 28, 28);
+            }
         }
     }
     .map {
@@ -1006,12 +1011,85 @@ header {
 }
 
 @media (min-width: 900px) {
+    .loading-screen .loading-screen-img {
+        width: 25rem;
+        height: auto;
+    }
+    
+    header {
+            .navbar .navlink:hover {
+                color: #000;
+            }
+            .hamburger {
+            cursor: pointer;
+        }
+    }
+    
+    
+    .banner-carousel {
+        height: 45vh;
+    }
+
+    .hero-section .menu-cta-container .navlink {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(168, 28, 28);
+            transition: all 500ms ease-in-out;
+            transform-origin: left;
+            transform: scaleX(0);
+        }
+        &:hover::before {
+            transform: scaleX(1);
+        }
+    }
+
     .mission-section {
         min-height: 45vh;
     }
 
     .about-section .story-container .about-photo {
         height: 40vh;
+    }
+
+    .menu-section .menu-tab {
+        cursor: pointer;
+        &:hover {
+            background: $secondaryColor;
+            color: white;
+        }
+    }
+
+    .cta-section {
+        button {
+            position: relative;
+            cursor: pointer;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgb(168, 28, 28);
+                transition: transform 500ms ease-in-out;
+                transform-origin: left;
+                transform: scaleX(0);
+                border-radius: inherit;
+            }
+            &:hover::before {
+                transform: scaleX(1);
+            }
+        }
     }
 }
 
