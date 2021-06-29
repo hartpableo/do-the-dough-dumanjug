@@ -1059,6 +1059,18 @@ header {
         height: 40vh;
     }
 
+    .feedbacks-section {
+        .feedbacks-container .fa-chevron-circle-left, .feedbacks-container .fa-chevron-circle-right {
+            font-size: 2.9rem;
+            cursor: pointer;
+            transition: color,opacity 250ms ease-in-out;
+            &:hover {
+                color: $secondaryColor;
+                opacity: 1;
+            }
+        }
+    }
+
     .menu-section .menu-tab {
         cursor: pointer;
         &:hover {

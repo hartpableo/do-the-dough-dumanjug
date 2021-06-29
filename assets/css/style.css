@@ -1045,6 +1045,16 @@ header .navbar.clicked {
     height: 40vh;
   }
 
+  .feedbacks-section .feedbacks-container .fa-chevron-circle-left, .feedbacks-section .feedbacks-container .fa-chevron-circle-right {
+    font-size: 2.9rem;
+    cursor: pointer;
+    transition: color, opacity 250ms ease-in-out;
+  }
+  .feedbacks-section .feedbacks-container .fa-chevron-circle-left:hover, .feedbacks-section .feedbacks-container .fa-chevron-circle-right:hover {
+    color: #5c2800;
+    opacity: 1;
+  }
+
   .menu-section .menu-tab {
     cursor: pointer;
   }
