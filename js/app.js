@@ -222,6 +222,21 @@ bestsellingTab.addEventListener('click',function() {
     displayMenuItems(bestsellers);
 });
 
+// filled inputs in form checker
+function fillCheck() {
+    const name = document.querySelector('#name');
+    const number = document.querySelector('#number');
+    const email = document.querySelector('#email');
+
+    if (name.value == "" || number.value == "" || email.value == "") {
+        alert("Please complete the form.");
+        return false;
+    } else {
+        alert("Thank you for your cooperation!");
+        return true;
+    };
+};
+
 // auto update year in footer
 const year = document.querySelector('.year');
 year.innerHTML = new Date().getFullYear();

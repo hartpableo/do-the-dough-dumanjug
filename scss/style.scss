@@ -767,6 +767,22 @@ header {
             }
         }
     }
+    .menu-download-container {
+        width: max-content;
+        margin: 1.5rem auto 1.25rem auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.8em;
+        background-color: $secondaryColor;
+        box-shadow: 0px 0px 5px 2px $secondaryColor;
+        .menu-download {
+            text-decoration: none;
+            font-family: $rowdies;
+            text-align: center;
+            color: $primaryColor;
+            font-size: 1.2rem;
+        }
+    }
 }
 
 .bestseller::after {
