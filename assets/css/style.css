@@ -942,6 +942,7 @@ header .navbar.clicked {
   color: #ffe8b2;
   margin: 2.75rem auto auto auto;
   width: 90.2777777778%;
+  text-align: center;
 }
 .footer-section .contact-details .contact-details-title {
   text-transform: uppercase;
